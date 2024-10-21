@@ -1,0 +1,44 @@
+/* @media (min-width: 992px) { 
+  .modal-backdrop.fade {
+    opacity: 0 !important;
+    overflow-y: scroll !important;
+  }
+}
+@media (min-width: 1200px) { 
+  .modal-backdrop.fade {
+    opacity: 0 !important;
+    overflow-y: scroll !important;
+  }
+ } */
+
+ /* <div className="col-lg-3 text-lg-center text-center">
+ <h5 className=" p-4 fs-3">Connect with Me</h5>
+ <div className="d-flex justify-content-lg-center justify-content-center mb-4">
+   <a href="https://www.facebook.com/profile.php?id=100093142520212" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
+     <i className="fab fa-facebook-f fa-2x"></i>
+   </a>
+   <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
+     <i className="fab fa-whatsapp fa-2x"></i>
+   </a>
+   <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
+     <i className="fab fa-linkedin-in fa-2x"></i>
+   </a>
+   <a href="https://github.com/mdshayan-hub" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
+     <i className="fab fa-github fa-2x"></i>
+   </a>
+   <a href="https://www.instagram.com/mdshayan187/" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
+     <i className="fab fa-instagram fa-2x"></i>
+   </a>
+ </div>
+
+
+</div> */
+
+
+/* <h5 className="mt-5 fs-3">Quick Links</h5>
+<div className="d-flex col-lg-12 justify-content-center flex-wrap mt-4">
+  <a href="#home" className="text-white mx-3 mb-2 text-decoration-none fs-5">Home</a>
+  <a href="#about" className="text-white mx-3 mb-2 text-decoration-none fs-5">About Me</a>
+  <a href="#projects" className="text-white mx-3 mb-2 text-decoration-none fs-5">Projects</a>
+  <a href="#contact" className="text-white mx-3 mb-2 text-decoration-none fs-5">Contact</a>
+</div> */
