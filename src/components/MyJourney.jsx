@@ -56,7 +56,7 @@ const MyJourney = () => {
   ];
 
   return (
-    <section id="education" className="py-5 text-white" style={{ backgroundColor: '#343a40' }}>
+    <section  className="py-5 text-white" style={{ backgroundColor: '#343a40' }}>
       <div className="container-fluid">
         <h2
           className="text-center mb-4 display-4 font-weight-bold text-white animate__animated animate__fadeInDown"
@@ -67,7 +67,7 @@ const MyJourney = () => {
 
         <div className="row">
           {/* Education Column */}
-          <div className="col-md-6 col-12 mb-4" data-aos="fade-down">
+          <div id="education" className="col-md-6 col-lg-6 col-12 mb-4 mx-auto" data-aos="fade-down">
             <h3 className="mb-3 text-center text-info fs-2">Education</h3>
             {educationData.map((education, index) => (
               <div
@@ -86,7 +86,7 @@ const MyJourney = () => {
           </div>
 
           {/* Experience Column */}
-          <div className="col-md-6 col-12 mb-4" data-aos="fade-down">
+          <div id="experience" className="col-md-6 col-lg-6 col-12 mb-4 mx-auto" data-aos="fade-down">
             <h3 className="mb-3 text-center text-info fs-2">Experience</h3>
             {experienceData.map((experience, index) => (
               <div
