@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import './app.css';
+import './App.css';
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import MyJourney from "./components/MyJourney";

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import 'animate.css'; // Ensure animate.css is imported
 
 const HeroSection = () => {
   const sectionRef = useRef(null); // Create a ref for the section

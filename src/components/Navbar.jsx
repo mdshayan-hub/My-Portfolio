@@ -122,7 +122,7 @@ const Navbar = () => {
             </li>
 
             {/* Dropdown Menu for Journey in Offcanvas */}
-            <li className="nav-item dropend" onMouseEnter={handleOffcanvasDropdownOpen} onMouseLeave={handleOffcanvasDropdownClose}>
+            <li className="nav-item dropdown" onMouseEnter={handleOffcanvasDropdownOpen} onMouseLeave={handleOffcanvasDropdownClose}>
               <a className="nav-link dropdown-toggle" href="#journey" id="offcanvasJourneyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded={isOffcanvasDropdownOpen} style={{ color: "#ddd" }}>
                 Journey
               </a>
