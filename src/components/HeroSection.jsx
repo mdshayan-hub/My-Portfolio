@@ -1,57 +1,25 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HeroSection = () => {
-  const sectionRef = useRef(null); // Create a ref for the section
-  const [isVisible, setIsVisible] = useState(false); // State to track visibility
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true); // Set visible to true when the section is in view
-          observer.disconnect(); // Stop observing once the section is visible
-        }
-      },
-      { threshold: 0.1 } // Trigger when 10% of the section is visible
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current); // Start observing the section
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current); // Clean up on unmount
-      }
-    };
+    AOS.init({ duration: 2000 });
   }, []);
+  
 
   return (
-    <section
-      ref={sectionRef} // Attach the ref to the section
-      className="hero text-center text-white d-flex align-items-center animate-on-scroll"
-      id="hero"
-    >
+    <section className="hero text-center text-white d-flex align-items-center" id="hero">
       <div className="container">
-        <h1
-          className={`display-4 ${
-            isVisible ? 'animate__animated animate__fadeInRight' : ''
-          }`}
-        >
+        <h1 className="display-4" data-aos="fade-right">
           Hello, I'm <span>MD SHAYAN</span>
         </h1>
-        <p
-          className={`lead ${
-            isVisible ? 'animate__animated animate__fadeInRight animate__delay-1s' : ''
-          }`}
-        >
+        <p className="lead" data-aos="fade-right">
           A Front-end Developer Specializing in Beautiful Web Experiences
         </p>
         <a
           href="#projects"
-          className={`btn btn-outline-light btn-lg mt-4 ${
-            isVisible ? 'animate__animated animate__fadeInRight animate__delay-2s' : ''
-          }`}
+          className="btn btn-outline-light btn-lg mt-4" data-aos="fade-right"
         >
           View My Work
         </a>

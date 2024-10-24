@@ -27,7 +27,7 @@ const Skills = () => {
             { title: 'JSON', iconClass: 'fas fa-code', color: 'text-warning', progress: '85%', bgColor: 'bg-warning' }
           ].map((skill, index) => (
             <div key={index} className="col-6 col-sm-6 col-lg-4" data-aos="fade-up">
-              <div className="card bg-dark text-light h-100 border border-light border-5 rounded-3 shadow-lg">
+              <div className="card bg-dark text-light h-100 border border-light border-3 border-lg-5 border-md-5 rounded-3 shadow-lg">
                 <div className="card-body text-center py-4">
                   <h5 className="card-title mb-4">{skill.title}</h5>
                   <i className={`${skill.iconClass} fs-1 ${skill.color}`}></i>

@@ -56,10 +56,10 @@ const MyJourney = () => {
   ];
 
   return (
-    <section  className="py-5 text-white" style={{ backgroundColor: '#343a40' }}>
+    <section  className="py-5 px-lg-5 px-md-3 px-2 text-white" style={{ backgroundColor: '#343a40' }}>
       <div className="container-fluid">
         <h2
-          className="text-center mb-4 display-4 font-weight-bold text-white animate__animated animate__fadeInDown"
+          className="text-center mb-4 display-4 font-weight-bold text-white "
           data-aos="fade-down"
         >
           My Journey
@@ -67,8 +67,8 @@ const MyJourney = () => {
 
         <div className="row">
           {/* Education Column */}
-          <div id="education" className="col-md-6 col-lg-6 col-12 mb-4 mx-auto" data-aos="fade-down">
-            <h3 className="mb-3 text-center text-info fs-2">Education</h3>
+          <div  className="col-md-6 col-lg-6 col-12 mb-4 mx-auto" data-aos="fade-down">
+            <h3 id="education" className="mb-3 text-center text-info fs-2">Education</h3>
             {educationData.map((education, index) => (
               <div
                 key={index}
@@ -86,8 +86,8 @@ const MyJourney = () => {
           </div>
 
           {/* Experience Column */}
-          <div id="experience" className="col-md-6 col-lg-6 col-12 mb-4 mx-auto" data-aos="fade-down">
-            <h3 className="mb-3 text-center text-info fs-2">Experience</h3>
+          <div  className="col-md-6 col-lg-6 col-12 mb-4 mx-auto" data-aos="fade-down">
+            <h3 id="experience" className="mb-3 text-center text-info fs-2">Experience</h3>
             {experienceData.map((experience, index) => (
               <div
                 key={index}

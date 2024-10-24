@@ -83,10 +83,6 @@ section {
 
  }
 
-
-
-
-
 .modal-backdrop{
   --bs-backdrop-zindex: unset !important;
 }
@@ -97,6 +93,7 @@ section {
 .offcanvas{
   width: 90% !important;
 }
+
 
 
 
@@ -157,10 +154,7 @@ h2 {
   position: relative;
 }
 
-.card-img-top {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-}
+
 
 .overlay {
   position: absolute;
@@ -213,8 +207,8 @@ h2 {
 
 .card-img-top {
   max-width: 100%;
-  height: 170px; 
-  object-fit: cover;
+  height: 190px; 
+  
 }
 
 

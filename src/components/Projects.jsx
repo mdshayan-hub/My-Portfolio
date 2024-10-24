@@ -5,9 +5,9 @@ import 'aos/dist/aos.css';
 
 const Projects = () => {
   const projects = [
-    { image: './projects/hex.jpeg', detail: 'View Details', title: 'Project 1', text: 'A brief description of the project goes here.', project: 'View Project' },
-    { image: './projects/ind.jpeg', detail: 'View Details', title: 'Project 2', text: 'A brief description of the project goes here.', project: 'View Project' },
-    { image: './projects/min.jpeg', detail: 'View Details', title: 'Project 3', text: 'A brief description of the project goes here.', project: 'View Project' }
+    { image: './projects/jenson.jpg', detail: 'View Details', title: 'Jenson-Decors', text: '"At Jenson Decors, transform your home with Jenson Decors, where style meets sophistication.', viewProject: 'https://jensen-decors-eta.vercel.app', project: 'View Project' },
+    { image: './projects/ind.jpeg', detail: 'View Details', title: 'Project 2', text: 'A brief description of the project goes here.', viewProject: '#', project: 'View Project' },
+    { image: './projects/min.jpeg', detail: 'View Details', title: 'Project 3', text: 'A brief description of the project goes here.', viewProject: '#', project: 'View Project' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,24 +53,26 @@ const Projects = () => {
 
         {/* Slider for mobile and tablet view */}
         <div className="d-block d-md-none text-center position-relative">
-          <div
-            className="card-slider"
-            onMouseEnter={() => setHoverIndex(currentIndex)}
-            onMouseLeave={() => setHoverIndex(null)}
-          >
+          <div className="card-slider">
             <div className="row">
               {projects.slice(currentIndex, currentIndex + cardsToShow).map((project, index) => (
-                <div key={index} className={`col-${12 / cardsToShow}`} data-aos="fade-up">
+                <div
+                  key={index}
+                  className={`col-${12 / cardsToShow}`}
+                  data-aos="fade-up"
+                  onMouseEnter={() => setHoverIndex(currentIndex + index)} // Track the index based on currentIndex + index
+                  onMouseLeave={() => setHoverIndex(null)}
+                >
                   <div className="image-container">
                     <img src={project.image} className="card-img-top" alt={project.title} />
-                    <div className={`overlay ${hoverIndex === index ? 'show' : ''}`}>
+                    <div className={`overlay ${hoverIndex === currentIndex + index ? 'show' : ''}`}>
                       {project.detail}
                     </div>
                   </div>
-                  <div className="card-body bg-dark text-white text-center p-4">
+                  <div className="card-body bg-dark text-white text-center p-3">
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text">{project.text}</p>
-                    <a href="#" className="btn btn-outline-light" aria-label={project.title}>
+                    <a href={project.viewProject} className="btn btn-outline-light" aria-label={project.title} target="_blank" rel="noopener noreferrer">
                       {project.project}
                     </a>
                   </div>
@@ -97,7 +99,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="col-lg-4 col-md-6 col-sm-8 mb-5 py-2 mx-auto"
+              className="col-lg-4 col-md-6 col-sm-8 mb-5 py-1 mx-auto"
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
               data-aos="fade-up"
@@ -109,10 +111,10 @@ const Projects = () => {
                     {project.detail}
                   </div>
                 </div>
-                <div className="card-body bg-dark text-white text-center p-4">
+                <div className="card-body bg-dark text-white text-center">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.text}</p>
-                  <a href="#" className="btn btn-outline-light" aria-label={project.title}>
+                  <a href={project.viewProject} className="btn btn-outline-light" aria-label={project.title} target="_blank" rel="noopener noreferrer">
                     {project.project}
                   </a>
                 </div>

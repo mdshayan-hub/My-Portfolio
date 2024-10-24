@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-2 pb-3 fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-1 pb-3 fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand fw-bold fs-4" href="#home" style={{ color: "#00c6ff" }}>MD SHAYAN</a>
           <button
@@ -128,7 +128,7 @@ const Navbar = () => {
               </a>
               <ul className={`dropdown-menu w-25 bg-dark ${isOffcanvasDropdownOpen ? 'show' : ''}`} aria-labelledby="offcanvasJourneyDropdown">
                 <li>
-                  <a className="dropdown-item bg-dark" href="#education" 
+                  <a className="dropdown-item bg-dark" href="#education" data-bs-dismiss="offcanvas"
                     style={{ color: "#ddd"}}
                     onMouseOver={(e) => {
                       e.target.style.color = "#00c6ff";
@@ -142,7 +142,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item bg-dark" href="#experience" 
+                  <a className="dropdown-item bg-dark" href="#experience" data-bs-dismiss="offcanvas"
                     style={{ color: "#ddd"}}
                     onMouseOver={(e) => {
                       e.target.style.color = "#00c6ff";

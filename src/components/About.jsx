@@ -11,16 +11,14 @@ const About = () => {
     <section id="about" className="py-5" style={{ backgroundColor: "#343a40" }}>
       <div className="container">
         <h2
-          className="text-center mb-4 display-4 font-weight-bold text-white"
-          data-aos="fade-right"
-        >
-          About Me
-        </h2>
+          className="text-center mb-3 display-4 font-weight-bold text-white"
+          data-aos="fade-right">About Me </h2>
+
         <div className="row justify-content-center" data-aos="fade-right">
           <div className="col-lg-8 text-center">
             {/* Profile Image Centered Above Text */}
             <img
-              src="./public/shayan2.jpg"
+              src="/shayan.jpg"
               alt="Profile"
               style={{
                 width: "200px",
@@ -31,7 +29,7 @@ const About = () => {
               data-aos="zoom-in"
             />
             <p
-              className="text-light py-4"
+              className="text-light py-2"
               style={{ lineHeight: "1.6", fontSize: "18px" }}
               data-aos="fade-right"
             >
@@ -41,9 +39,10 @@ const About = () => {
               I am excited to collaborate with dynamic teams, contribute to innovative projects, and grow as a developer committed to best practices.
             </p>
 
+            {/* Hire Me Button */}
             <a
-              href="#projects"
-              className="btn btn-outline-light mt-3"
+              href="https://wa.me/1234567890" // Replace '1234567890' with your actual phone number
+              className="btn btn-outline-light mt-2 "
               style={{
                 borderRadius: "30px",
                 padding: "10px 30px",
@@ -59,8 +58,10 @@ const About = () => {
                 e.target.style.color = "#fff";
               }}
               data-aos="fade-up"
+              target="_blank" // Opens WhatsApp in a new tab
+              rel="noopener noreferrer"
             >
-              View My Work
+              Hire Me
             </a>
           </div>
         </div>

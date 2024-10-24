@@ -31,25 +31,25 @@ const Contact = () => {
   return (
     <div id="contact" className="bg-dark pt-3 pb-5 text-center text-white">
       <div className="my-4 py-5">
-        <h2 className="display-5" data-aos="fade-down">Contact Me</h2>
-        <p className="lead" data-aos="fade-down">I would love to hear from you!</p>
+        <h2 className="display-5" data-aos="fade-up">Contact Me</h2>
+        <p className="lead" data-aos="fade-up">I would love to hear from you!</p>
       </div>
 
       <div className="shadow-sm mx-auto bg-sky px-lg-3 py-lg-5" style={{ width: '89%', borderRadius: '21px' }}>
         <div className="container">
           <div className="row py-5 justify-content-center">
             <div className="col-md-10 col-lg-6">
-              <form className="shadow-lg rounded text-start bg-dark p-3 p-lg-4 py-lg-5 py-sm-5 border border-5 rounded-5"
+              <form className="shadow-lg rounded text-start bg-dark p-3 p-lg-4 py-lg-5 py-sm-5 border border-lg-5 border-md-5 border-3 rounded-5"
                 style={{ backgroundColor: '#ffffff', borderRadius: '10px' }}
                 onSubmit={handleSubmit}
-                data-aos="fade-right">
+                data-aos="fade-up">
                 <div className="mb-4 fw-bold">
                   <label htmlFor="name" className="form-label ps-2 fs-5" style={{ color: '#00c6ff' }}>
                     <i className="fas fa-user"></i> Name
                   </label>
                   <input
                     type="text"
-                    className="form-control border border-5 border-info"
+                    className="form-control border border-lg-5 border-md-5 border-3 border-info"
                     id="name"
                     placeholder="Enter Your Name"
                     style={{ borderColor: '#ddd' }}
@@ -66,7 +66,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="form-control border border-5 border-info"
+                    className="form-control border border-lg-5 border-md-5 border-3 border-info"
                     id="email"
                     placeholder="name@example.com"
                     style={{ borderColor: '#ddd', borderRadius: '5px' }}
@@ -82,7 +82,7 @@ const Contact = () => {
                     <i className="fas fa-comment"></i> Message
                   </label>
                   <textarea
-                    className="form-control border border-5 border-info"
+                    className="form-control border border-lg-5 border-md-5 border-3 border-info"
                     id="message"
                     placeholder="Type a message..."
                     rows="4"
@@ -119,14 +119,14 @@ const Contact = () => {
 
             {/* Additional Details */}
             <div className="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start text-white mt-5 mt-lg-0 rounded-5 d-none d-lg-block d-md-none"
-              data-aos="fade-left">
+              data-aos="fade-up">
               <div className="box-border rounded-5 bg-light p-lg-3 p-2 my-5 mt-5 mx-auto shadow-lg">
                 <div className="inner-box bg-dark border border-5 border-info rounded-4 p-5">
                   <div className="d-flex align-items-center mb-4">
                     <i className="fas fa-phone fa-2x bg-dark text-info p-2 rounded-circle me-3"></i>
                     <div>
                       <h4 className="fs-4 mb-1">Phone</h4>
-                      <p className="fs-5">+1 234 567 890</p>
+                      <p className="fs-5">+92-3123661133</p>
                     </div>
                   </div>
 
@@ -134,7 +134,7 @@ const Contact = () => {
                     <i className="fas fa-map-marker-alt fa-2x bg-dark text-info p-2 rounded-circle me-3"></i>
                     <div>
                       <h4 className="fs-4 mb-1">Location</h4>
-                      <p className="fs-5">123 Street Name, City, Country</p>
+                      <p className="fs-5">Majeed Colony Sector II, Karachi, Pakistan</p>
                     </div>
                   </div>
 
@@ -142,7 +142,7 @@ const Contact = () => {
                     <i className="fas fa-clock fa-2x bg-dark text-info p-2 rounded-circle me-3"></i>
                     <div>
                       <h4 className="fs-4 mb-1">Working Hours</h4>
-                      <p className="fs-5">Mon - Fri: 9am - 6pm</p>
+                      <p className="fs-5">Mon - Sun: 9pm - 6am</p>
                     </div>
                   </div>
                 </div>
