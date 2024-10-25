@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
 
           {/* Right Column - Quick Links and Social Media */}
-          <div className="col-lg-3 text-lg-center text-center">
+          <div className="col-lg-3  text-lg-center text-center">
  <h5 className=" p-4 fs-3">Connect with Me</h5>
  <div className="d-flex justify-content-lg-center justify-content-center mb-3">
  <a href="https://www.facebook.com/profile.php?id=100093142520212" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
@@ -51,10 +51,10 @@ const Footer = () => {
 
 <h5 className="mt-2 text-center fs-3">Quick Links</h5>
 <div className="d-flex col-lg-12  justify-content-center flex-wrap mt-4">
-  <a href="#home" className="text-white mx-3 mb-2 text-decoration-none fs-5">Hom</a>
-  <a href="#about" className="text-white mx-3 mb-2 text-decoration-none fs-5">About Me</a>
-  <a href="#projects" className="text-white mx-3 mb-2 text-decoration-none fs-5">Projects</a>
-  <a href="#contact" className="text-white mx-3 mb-2 text-decoration-none fs-5">Contact</a>
+  <a href="#home" className="text-white mx-2 mb-2 text-decoration-none fs-6">Home</a>
+  <a href="#about" className="text-white mx-2 mb-2 text-decoration-none fs-6">About</a>
+  <a href="#projects" className="text-white mx-2 mb-2 text-decoration-none fs-6">Projects</a>
+  <a href="#contact" className="text-white mx-2 mb-2 text-decoration-none fs-6">Contact</a>
 </div>
         </div>
 
@@ -62,10 +62,10 @@ const Footer = () => {
 
 
         {/* Footer Bottom */}
-        <div className="row mt-2 ">
-          <div className="col-12 mt-2">
+        <div className="row ">
+          <div className="col-12 ">
             <hr className="bg-secondary mb-3" />
-            <p className="text-center">&copy; 2024 My Portfolio | Designed by <span className="fw-bold">Md Shayan</span></p>
+            <p className="text-center small">&copy; 2024 My Portfolio | Designed by <span className="fw-bold text-info">Md Shayan</span></p>
           </div>
         </div>
       </div>

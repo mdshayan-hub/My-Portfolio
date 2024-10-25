@@ -49,29 +49,32 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section py-5 bg-sky">
       <div className="container">
-        <h2 className="text-center text-light fw-bold mb-5 display-4" data-aos="fade-down">Projects</h2>
+        <h2 className="text-center text-light mb-3 display-3" data-aos="fade-up">Projects</h2>
+        <p className="text-center lead text-light mb-4 py-1  mb-lg-0 mb-md-0" data-aos="fade-up">
+          Showcasing my most impactful work.
+        </p>
 
         {/* Slider for mobile and tablet view */}
         <div className="d-block d-md-none text-center position-relative">
-          <div className="card-slider">
+          <div className="card-slider" data-aos="fade-up">
             <div className="row">
               {projects.slice(currentIndex, currentIndex + cardsToShow).map((project, index) => (
                 <div
                   key={index}
                   className={`col-${12 / cardsToShow}`}
-                  data-aos="fade-up"
+                  
                   onMouseEnter={() => setHoverIndex(currentIndex + index)} // Track the index based on currentIndex + index
                   onMouseLeave={() => setHoverIndex(null)}
                 >
                   <div className="image-container">
                     <img src={project.image} className="card-img-top" alt={project.title} />
-                    <div className={`overlay ${hoverIndex === currentIndex + index ? 'show' : ''}`}>
+                    <div className={`overlay  fw-bold text-light ${hoverIndex === currentIndex + index ? 'show' : ''}`}>
                       {project.detail}
                     </div>
                   </div>
                   <div className="card-body bg-dark text-white text-center p-3">
                     <h5 className="card-title">{project.title}</h5>
-                    <p className="card-text">{project.text}</p>
+                    <p className="card-text small">{project.text}</p>
                     <a href={project.viewProject} className="btn btn-outline-light" aria-label={project.title} target="_blank" rel="noopener noreferrer">
                       {project.project}
                     </a>
@@ -95,11 +98,11 @@ const Projects = () => {
         </div>
 
         {/* Grid for larger screens */}
-        <div className="row py-5 d-none d-md-flex">
+        <div className="row py-4 mx-lg-4 mx-md-4 d-none d-md-flex">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="col-lg-4 col-md-6 col-sm-8 mb-5 py-1 mx-auto"
+              className="col-lg-4 col-md-6 col-sm-8 mb-5  mx-auto"
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
               data-aos="fade-up"
@@ -107,7 +110,7 @@ const Projects = () => {
               <div className="card h-100 shadow border-0 transition-transform">
                 <div className="image-container">
                   <img src={project.image} className="card-img-top" alt={project.title} />
-                  <div className={`overlay ${hoverIndex === index ? 'show' : ''}`}>
+                  <div className={`overlay fw-bold text-light ${hoverIndex === index ? 'show' : ''}`}>
                     {project.detail}
                   </div>
                 </div>

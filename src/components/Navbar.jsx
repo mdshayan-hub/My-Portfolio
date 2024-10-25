@@ -12,8 +12,8 @@ const Navbar = () => {
   const handleOffcanvasDropdownClose = () => setIsOffcanvasDropdownOpen(false);
 
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-1 pb-3 fixed-top">
+    <header>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-md-1 px-0 px-lg-0 pb-3 fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand fw-bold fs-4" href="#home" style={{ color: "#00c6ff" }}>MD SHAYAN</a>
           <button
@@ -21,9 +21,8 @@ const Navbar = () => {
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar2"
-            aria-controls="offcanvasNavbar2"
-          >
-            <span><i className="fa-solid fa-bars fs-1"></i></span>
+            aria-controls="offcanvasNavbar2">
+            <span><i className="fa-solid fa-bars text-info fs-1"></i></span>
           </button>
           <div className="collapse navbar-collapse d-none d-lg-flex">
             <ul className="navbar-nav ms-auto px-5 fs-4">
@@ -86,12 +85,8 @@ const Navbar = () => {
       <div className="offcanvas offcanvas-start canvas-none bg-dark d-lg-none" tabIndex="-1" data-bs-scroll="true" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel2">
         <div className="offcanvas-header">
           <a className="navbar-brand fw-bold fs-4" href="#home" style={{ color: "#00c6ff" }}>MD SHAYAN</a>
-          <button
-            type="button"
-            className="btn-close btn-close-white px-3 fs-5 text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+          <div type="button" className=" px-1 text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+          > <i class="fa-solid fa-xmark fs-1 text-info"></i></div>
         </div>
         <hr className="text-white mt-1" />
         <div className="offcanvas-body fs-4">
@@ -176,7 +171,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </>
+    </header>
   );
 };
 

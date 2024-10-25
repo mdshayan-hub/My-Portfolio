@@ -59,11 +59,12 @@ const MyJourney = () => {
     <section  className="py-5 px-lg-5 px-md-3 px-2 text-white" style={{ backgroundColor: '#343a40' }}>
       <div className="container-fluid">
         <h2
-          className="text-center mb-4 display-4 font-weight-bold text-white "
-          data-aos="fade-down"
-        >
-          My Journey
+          className="text-center mb-3 display-5 font-weight-bold text-white "
+          data-aos="fade-down"> My Journey
         </h2>
+        <p className="text-center  lead mb-4" data-aos="fade-down">
+           My journey in a brief overview.
+          </p>
 
         <div className="row">
           {/* Education Column */}

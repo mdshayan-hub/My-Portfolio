@@ -10,10 +10,13 @@ const Skills = () => {
   return (
     <section id="skills" className="skill py-5 bg-sky">
       <div className="container">
-        <h2 className="text-center fw-bold mb-5 display-5 text-light" data-aos="fade-right">
+        <h2 className="text-center mb-2 display-5 text-light" data-aos="fade-up">
           My Skills
         </h2>
-        <div className="row g-4 justify-content-center py-5">
+        <p className="text-center lead text-light " data-aos="fade-up">
+          Key skills that drive my projects.
+        </p>
+        <div className="row g-4 justify-content-center py-4 py-lg-5">
           {/* Skill Cards */}
           {[
             { title: 'HTML', iconClass: 'fab fa-html5', color: 'text-danger', progress: '90%', bgColor: 'bg-danger' },
@@ -26,7 +29,7 @@ const Skills = () => {
             { title: 'Git & GitHub', iconClass: 'fa-brands fa-github', color: 'text-light', progress: '80%', bgColor: 'bg-secondary' },
             { title: 'JSON', iconClass: 'fas fa-code', color: 'text-warning', progress: '85%', bgColor: 'bg-warning' }
           ].map((skill, index) => (
-            <div key={index} className="col-6 col-sm-6 col-lg-4" data-aos="fade-up">
+            <div key={index} className="col-6 col-sm-5 col-lg-3 col-md-4" data-aos="fade-up">
               <div className="card bg-dark text-light h-100 border border-light border-3 border-lg-5 border-md-5 rounded-3 shadow-lg">
                 <div className="card-body text-center py-4">
                   <h5 className="card-title mb-4">{skill.title}</h5>
