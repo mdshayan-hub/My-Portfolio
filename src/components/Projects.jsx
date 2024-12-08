@@ -5,9 +5,10 @@ import 'aos/dist/aos.css';
 
 const Projects = () => {
   const projects = [
-    { image: './projects/jenson.jpg', detail: 'View Details', title: 'Jenson-Decors', text: '"At Jenson Decors, transform your home with Jenson Decors, where style meets sophistication.', viewProject: 'https://jensen-decors-eta.vercel.app', project: 'View Project' },
-    { image: './projects/ind.jpeg', detail: 'View Details', title: 'Project 2', text: 'A brief description of the project goes here.', viewProject: '#', project: 'View Project' },
-    { image: './projects/min.jpeg', detail: 'View Details', title: 'Project 3', text: 'A brief description of the project goes here.', viewProject: '#', project: 'View Project' }
+    
+    { image: './projects/task manager.jpg', detail: 'View Details', title: 'Task Manager', text: 'Task Manager - Simple and Intuitive Task Management App.', viewProject: 'https://task-manager-omega-nine.vercel.app/', project: 'View Project' },
+    { image: './projects/jenson.jpg', detail: 'View Details', title: 'Jenson-Decors', text: '"At Home-Styler, transform your home with Home-Styler. ', viewProject: 'https://jensen-decors-eta.vercel.app', project: 'View Project' },
+    { image: './projects/wheater.jpg', detail: 'View Details', title: 'Weather Season', text: 'Weather App - Real-Time Weather Forecasting Weather.', viewProject: 'https://weather-season.vercel.app/', project: 'View Project' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,7 +57,7 @@ const Projects = () => {
 
         {/* Slider for mobile and tablet view */}
         <div className="d-block d-md-none text-center position-relative">
-          <div className="card-slider" data-aos="fade-up">
+          <div className="card-slider shadow rounded-circle bg-white" data-aos="fade-up">
             <div className="row">
               {projects.slice(currentIndex, currentIndex + cardsToShow).map((project, index) => (
                 <div
@@ -64,18 +65,18 @@ const Projects = () => {
                   className={`col-${12 / cardsToShow}`}
                   
                   onMouseEnter={() => setHoverIndex(currentIndex + index)} // Track the index based on currentIndex + index
-                  onMouseLeave={() => setHoverIndex(null)}
-                >
+                  onMouseLeave={() => setHoverIndex(null)}>
+
                   <div className="image-container">
                     <img src={project.image} className="card-img-top" alt={project.title} />
                     <div className={`overlay  fw-bold text-light ${hoverIndex === currentIndex + index ? 'show' : ''}`}>
                       {project.detail}
                     </div>
                   </div>
-                  <div className="card-body bg-dark text-white text-center p-3">
+                  <div className="card-body bg-dark text-white text-center p-3 rounded-pill">
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text small">{project.text}</p>
-                    <a href={project.viewProject} className="btn btn-outline-light" aria-label={project.title} target="_blank" rel="noopener noreferrer">
+                    <a href={project.viewProject} className="btn btn-outline-light fw-bold" aria-label={project.title} target="_blank" rel="noopener noreferrer">
                       {project.project}
                     </a>
                   </div>
@@ -102,22 +103,22 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="col-lg-4 col-md-6 col-sm-8 mb-5  mx-auto"
+              className="col-lg-4 col-md-6 col-sm-8 mb-5 mx-auto"
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
-              data-aos="fade-up"
-            >
-              <div className="card h-100 shadow border-0 transition-transform">
+              data-aos="fade-up">
+
+              <div className="card h-100 shadow border-0 transition-transform rounded-circle">
                 <div className="image-container">
                   <img src={project.image} className="card-img-top" alt={project.title} />
                   <div className={`overlay fw-bold text-light ${hoverIndex === index ? 'show' : ''}`}>
                     {project.detail}
                   </div>
                 </div>
-                <div className="card-body bg-dark text-white text-center">
+                <div className="card-body bg-dark text-white text-center rounded-pill">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.text}</p>
-                  <a href={project.viewProject} className="btn btn-outline-light" aria-label={project.title} target="_blank" rel="noopener noreferrer">
+                  <a href={project.viewProject} className="btn btn-outline-light fw-bold " aria-label={project.title} target="_blank" rel="noopener noreferrer">
                     {project.project}
                   </a>
                 </div>

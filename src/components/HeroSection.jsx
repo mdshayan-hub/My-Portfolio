@@ -19,8 +19,7 @@ const HeroSection = () => {
         </p>
         <a
           href="#projects"
-          className="btn btn-outline-light btn-lg mt-4" data-aos="fade-right"
-        >
+          className="btn btn-outline-info btn-lg mt-4 fw-bold shadow-info" data-aos="fade-right">
           View My Work
         </a>
       </div>

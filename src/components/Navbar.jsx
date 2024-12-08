@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-md-1 px-0 px-lg-0 pb-3 fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-md-1 px-0 px-lg-2 pb-3 fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand fw-bold fs-4" href="#home" style={{ color: "#00c6ff" }}>MD SHAYAN</a>
+          <a className="navbar-brand fw-bold fs-3" href="#home" style={{ color: "#00c6ff" }}>MD SHAYAN</a>
           <button
             className="navbar-toggler pt-2"
             type="button"
@@ -83,12 +83,11 @@ const Navbar = () => {
 
       {/* Offcanvas menu */}
       <div className="offcanvas offcanvas-start canvas-none bg-dark d-lg-none" tabIndex="-1" data-bs-scroll="true" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel2">
-        <div className="offcanvas-header">
-          <a className="navbar-brand fw-bold fs-4" href="#home" style={{ color: "#00c6ff" }}>MD SHAYAN</a>
+        <div className="offcanvas-header border-bottom border-secondary">
+          <a className="navbar-brand fw-bold fs-3" href="#home" style={{ color: "#00c6ff" }}>MD SHAYAN</a>
           <div type="button" className=" px-1 text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
           > <i class="fa-solid fa-xmark fs-1 text-info"></i></div>
         </div>
-        <hr className="text-white mt-1" />
         <div className="offcanvas-body fs-4">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -103,7 +102,9 @@ const Navbar = () => {
               <a className="nav-link" href="#about" data-bs-dismiss="offcanvas"
                 style={{ color: "#ddd" }}
                 onMouseOver={(e) => e.target.style.color = "#00c6ff"}
-                onMouseOut={(e) => e.target.style.color = "#ddd"}>
+                onMouseOut={(e) => e.target.style.color = "#ddd"
+                  
+                }>
                 About
               </a>
             </li>

@@ -90,7 +90,8 @@ const Contact = () => {
                       onChange={handleNameChange}
                       required
                     />
-                    {nameError && <p className="text-danger small mt-2">{nameError}</p>}
+                    {nameError && <p className="text-danger small mt-3
+                    ">{nameError}</p>}
                   </div>
 
                   <div className="col-md-6 col-6 mb-4 fw-bold">

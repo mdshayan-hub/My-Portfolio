@@ -33,7 +33,8 @@ const Footer = () => {
    <a href="https://wa.me/923123661133" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
   <i className="fab fa-whatsapp fa-2x"></i>
 </a>
-<a href="https://www.linkedin.com/in/shayan-jamal-a79285332/" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
+<a href="https://www.linkedin.com/in/md-shayan-a79285332/
+" target="_blank" rel="noopener noreferrer" className="text-white mx-3">
   <i className="fab fa-linkedin-in fa-2x"></i>
 </a>
    <a href="https://github.com/mdshayan-hub" target="_blank" rel="noopener noreferrer" className="text-white mx-3">

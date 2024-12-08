@@ -81,7 +81,7 @@ const MyJourney = () => {
                 <p>
                   <strong className="text-info">{education.title}</strong> — {education.institution}
                 </p>
-                <p>{education.description}</p>
+                <p className='small'>{education.description}</p>
               </div>
             ))}
           </div>
@@ -100,7 +100,7 @@ const MyJourney = () => {
                 <p>
                   <strong className="text-info">{experience.title}</strong> — {experience.company}
                 </p>
-                <p>{experience.description}</p>
+                <p className='small'>{experience.description}</p>
               </div>
             ))}
           </div>
